@@ -62,6 +62,7 @@ nav a, section a {
 nav a:hover, section a:hover {
   background-color: #45a049; /* color al pasar el mouse */
 }
+
 /* Contenedor de las guías */
 section ul {
   display: flex;
@@ -93,6 +94,7 @@ section ul li a {
 section ul li a:hover {
   background-color: #45a049;
 }
+
 /* Diseño adaptable para pantallas pequeñas */
 @media (max-width: 768px) {
   section ul {
