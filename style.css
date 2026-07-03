@@ -62,3 +62,58 @@ nav a, section a {
 nav a:hover, section a:hover {
   background-color: #45a049; /* color al pasar el mouse */
 }
+/* Contenedor de las guías */
+section ul {
+  display: flex;
+  flex-wrap: wrap; /* permite que salten a la siguiente línea si hay muchas */
+  justify-content: center; /* centra los botones */
+  list-style: none; /* quita los puntos del listado */
+  padding: 0;
+}
+
+/* Cada botón dentro del listado */
+section ul li {
+  margin: 10px;
+}
+
+/* Enlaces dentro de los botones */
+section ul li a {
+  display: inline-block;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
+  text-align: center;
+  width: 220px; /* tamaño del cajón */
+  transition: background-color 0.3s;
+}
+
+section ul li a:hover {
+  background-color: #45a049;
+}
+/* Diseño adaptable para pantallas pequeñas */
+@media (max-width: 768px) {
+  section ul {
+    flex-direction: column; /* los botones se apilan verticalmente */
+    align-items: center; /* centrados */
+  }
+
+  section ul li a {
+    width: 90%; /* ocupa casi todo el ancho del celular */
+    font-size: 16px; /* texto un poco más pequeño */
+    padding: 15px;
+  }
+}
+
+/* Para pantallas medianas (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  section ul {
+    justify-content: center;
+  }
+
+  section ul li a {
+    width: 45%; /* dos columnas en tablet */
+  }
+}
